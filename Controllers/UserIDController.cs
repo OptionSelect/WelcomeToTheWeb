@@ -8,18 +8,11 @@ using WelcomeToTheWeb.Models;
 
 namespace WelcomeToTheWeb.Controllers
 {
-    public class APIController : Controller
+    public class UserIDController : Controller
     {
-        
         public IActionResult Index()
         {
-            var me = new ApiModel
-            {
-                Name = "Brandyn", 
-                FavoriteColor = "Purple", 
-                FavoriteFood = "Spaghetti"
-            };
-            return Json(me);
+            return View();
         }
     }
 }
