@@ -10,9 +10,15 @@ namespace WelcomeToTheWeb.Controllers
 {
     public class UserIDController : Controller
     {
+        [Route("/userid/{id}")]
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }

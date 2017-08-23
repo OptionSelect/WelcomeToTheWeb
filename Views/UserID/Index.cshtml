@@ -1,3 +1,12 @@
+@{
+    ViewData["Title"] = "Profile Page";
+}
+
 <div>
-    <h1>PROFILE</h1>
+    <h1> @ViewData["Title"]</h1>
+    <p> User @ViewContext.RouteData.Values["id"]</p>
+    <p>Name: Squiggy</p>
+    <p>Status: King</p>
+    <p>Currently Adventuring: False</p>
+    <p>Has Harem: True</p>
 </div>
