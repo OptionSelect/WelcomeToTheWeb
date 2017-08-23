@@ -1,0 +1,19 @@
+<br>
+<br>
+<br>
+<div>
+    <form asp-controller = "Subscribe" asp-action = "Index" method = "Post">
+        <input type="text" name = "name" placeholder = "Name">
+        <input type="email" name = "email" placeholder= "E-Mail">
+        <button type="submit">Submit</button>
+    </form>
+    @if(ViewData["name"]!= null)
+    {
+        <br>
+        <p>Showing Last Submissions</p>
+        <ul>
+            <li>@ViewData["Name"]</li>
+            <li>@ViewData["Email"]</li>
+        </ul>    
+    }
+</div>
